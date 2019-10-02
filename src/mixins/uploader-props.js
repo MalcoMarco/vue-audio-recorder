@@ -4,6 +4,6 @@ export default {
     format    : { type: String, default: 'mp3'      },
     headers   : { type: Object, default: () => ({}) },
     uploadUrl : { type: String                      },
-    someparams: { type: Object, default: { 'param1': 'value1' } },
+    someparams: { type: Object, default:()=>( { 'param1': 'value1' }) },
   }
 }
